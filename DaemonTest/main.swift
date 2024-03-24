@@ -44,6 +44,8 @@ class Controller {
 	//   while true; do leaks DaemonTest | grep "footprint"; sleep 5; done
 	
 	func leakKernelMemory() {
+		print("leak kernel memory...")
+	
 		var processorCount: natural_t = 0
 		var processorInfoArray: processor_info_array_t? = nil
 		var processorInfoCount: mach_msg_type_number_t = 0
